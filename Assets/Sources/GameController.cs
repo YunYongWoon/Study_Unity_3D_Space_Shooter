@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
     bool restart;
 
     void Start() {
+        Screen.SetResolution(480, 800, false);
         score = 0;
         restartText.text = "";
         GameOverText.text = "";
