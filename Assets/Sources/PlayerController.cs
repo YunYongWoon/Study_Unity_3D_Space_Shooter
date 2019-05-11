@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+    public GameObject shot;
+    public Transform firePosition;
     float speed = 5;    // 속도
     float tilt = 5;     // 회전값
 
     void Start() {
 
     }
-    
-    void FixedUpdate() {
+
+    // 단순한 키 입력
+    void Update() { 
+        if(Input.GetButtonDown("Fire1") == true) {
+            Instantiate(shot, firePosition.position, firePosition.rotation);
+        }
+    }
+
+    // 물리적인 움직임을 업데이트
+    void FixedUpdate() { 
         float dirX = Input.GetAxis("Horizontal");
         float dirY = Input.GetAxis("Vertical");
 
