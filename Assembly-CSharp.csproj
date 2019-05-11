@@ -70,6 +70,7 @@
     <Compile Include="Assets\_Complete-Game\Scripts\Done_PlayerController.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_RandomRotator.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_WeaponController.cs" />
+    <Compile Include="Assets\Sources\DestroyByContact.cs" />
     <Compile Include="Assets\Sources\GameController.cs" />
     <Compile Include="Assets\Sources\Mover.cs" />
     <Compile Include="Assets\Sources\PlayerController.cs" />
